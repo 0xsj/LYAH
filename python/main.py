@@ -38,9 +38,11 @@ class LinkedinApplication:
       password.clear()
       password.send_keys(self.password)
 
+      # submit the password
+      password.send_keys(Keys.RETURN)
+
   
-      # email.clear()
-      # email.send_keys(self.email)
+
 
 
     def close_session(self):
