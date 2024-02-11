@@ -1,1 +1,32 @@
-.vscode
+# Compiled bytecode
+**/target/
+
+# Generated IntelliJ IDEA project files
+.idea/
+
+# Generated Eclipse project files
+.classpath
+.project
+.settings/
+
+# Log files
+*.log
+
+# User-specific files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# sbt specific files
+/.bsp/
+/.metals/
+
+# VSCode specific files
+.vscode/
