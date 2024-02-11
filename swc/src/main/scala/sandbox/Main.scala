@@ -1,6 +1,7 @@
 package sandbox
 
 import cats.implicits._
+import JsonWriterInstances._
 
 object Main extends App {
   val str = "hello cats"
@@ -8,4 +9,10 @@ object Main extends App {
   println("Hello " |+| "Cats!".toUpperCase)
   println(upperCaseStr)
 
+  val person = Person("John Doe", "john@example.com")
+  println(person)
+
+  // Now you can use personWriter from JsonWriterInstances
+  val jsonPerson = personWriter.write(person)
+  println(jsonPerson)
 }
