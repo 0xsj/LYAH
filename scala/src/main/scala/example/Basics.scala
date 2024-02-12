@@ -2,9 +2,10 @@
 
 // expressions
 object Basics extends Expression with App {
-  println(expression)
+  println(expressionSum)
 }
 
 trait Expression {
   lazy val expression: String = "basics"
+  lazy val expressionSum: Int = 1 + 1
 }
