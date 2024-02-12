@@ -71,3 +71,11 @@ object JsonWriterInstances {
   * class. For example, JsonWriter[A] defines a type parameter A, which can be
   * instantiated with specific types like String or Person.
   */
+
+// 1.1.3 TypeClass Use
+
+// object Json {
+//   def toJson[A](value: A)(implicit w: JsonWriter[A]): Json =
+//     w.Write(value)
+
+// }

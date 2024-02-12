@@ -15,4 +15,8 @@ object Main extends App {
   // Now you can use personWriter from JsonWriterInstances
   val jsonPerson = personWriter.write(person)
   println(jsonPerson)
+
+  val person2 = Json.toJson(Person("Dave", "dave@example.com"))
+  println(person2)
+
 }
