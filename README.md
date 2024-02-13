@@ -1,3 +1,0 @@
-# cats
-
-- personal growth
