@@ -1,0 +1,79 @@
+# SBT specific files
+target/
+project/target/
+project/project/
+.cache/
+lib_managed/
+src_managed/
+.history
+.sbt*
+/.DS_Store
+
+# Metals language server files
+.metals/
+.bloop/
+.bsp/
+.vscode/
+.worksheet/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code files
+.vscode/
+
+# MacOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a repository
+.Python
+.env
+.node_repl_history
+build/
+
+# Log files
+logs/
+*.log
+*.log.*
+
+# Compiled class files
+*.class
+
+# Scala classes
+*.lo
+*.la
+*.a
+*.so
+*.dll
+*.dylib
+*.jar
+*.war
+*.ear
+*.pyc
+*.pyo
+*.pyd
+
+# Python virtual environment
+.venv/
+
+# Scala cache directories
+.cache/
+
+# Gradle
+.gradle/
+build/
+
+# sbt-idea plugin
+.idea_modules/
+
+# Scala Test output
+test-output/
