@@ -18,6 +18,23 @@ object TwoSum_1 extends App {
     findPair(0, Map.empty)
   }
 
+  // bad immutable
+  def solution2(nums: Array[Int], target: Int): Array[Int] = {
+    val indexMap = scala.collection.mutable.Map[Int, Int]()
+
+    for (i <- nums.indices) {
+      val current = nums(i)
+      val complement = target - current
+
+      if(indexMap.contains(complement)) {
+        return Array(indexMap(complement), i)
+      }
+
+      indexMap(current) = i 
+    }
+    Array()
+  }
+
   val testCases = Seq(
     (Array(2, 7, 11, 15), 9),  // Expected: Some((0, 1))
     (Array(3, 2, 4), 6),       // Expected: Some((1, 2))
